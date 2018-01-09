@@ -1,0 +1,252 @@
+--浏览器登录
+http://localhost:8080/INFO_ICREAM_WEB/App/userLogin?EMPLOYEE_NO=xf99&PASSWORD=1
+--报价定损单列表查询
+http://localhost:8080/INFO_ICREAM_WEB/App/queryEstimateOrderList?QUERY_CONDITION=JDR002&CURRENT_PAGE=1
+
+{
+    "CODE": 200,
+    "TT_ESTIMATE_ORDER": [
+        {
+            "OWNER_NO": "OW1706160002",
+            "SERVICE_ADVISOR": "xf99",
+            "VIN": "LSVDM29FX62219011",
+            "MODEL_CODE": "7P5223",
+            "EST_CREATE_DATE": "2018-01-02 15:25:36",
+            "MODEL_NAME": "途锐 3.0TSI",
+            "DELIVERER_MOBILE": "15678900987",
+            "LICENSE": "沪JDR002",
+            "ESTIMATE_NO": "EO1801020001",
+            "OWNER_PROPERTY": 11901002,
+            "RO_NO": "",
+            "OWNER_NAME": "叶子文",
+            "SERVICE_ADVISOR_NAME": "xinfa",
+            "DELIVERER": "叶子文"
+        },
+        {
+            "OWNER_NO": "OW1712280001",
+            "SERVICE_ADVISOR": "0525",
+            "VIN": "LSV98765432123456",
+            "MODEL_CODE": "7P52N3",
+            "EST_CREATE_DATE": "2017-12-28 11:04:54",
+            "MODEL_NAME": "途锐 NF 3.0TDI (2011 MY)",
+            "DELIVERER_MOBILE": "15678900988",
+            "LICENSE": "沪JDR919",
+            "ESTIMATE_NO": "EO1712280001",
+            "OWNER_PROPERTY": 11901002,
+            "RO_NO": "",
+            "OWNER_NAME": "罗玉萍",
+            "SERVICE_ADVISOR_NAME": "杜叶雯",
+            "DELIVERER": "张三"
+        },
+        {
+            "OWNER_NO": "OW1706230002",
+            "SERVICE_ADVISOR": "0525",
+            "VIN": "LSV123L1321142800",
+            "MODEL_CODE": "5913A1",
+            "EST_CREATE_DATE": "2017-12-22 10:05:24",
+            "MODEL_NAME": "途观1.8T前驱 AT Comfortline风尚版",
+            "DELIVERER_MOBILE": "13611112222",
+            "LICENSE": "沪JDR800",
+            "ESTIMATE_NO": "EO1712220001",
+            "OWNER_PROPERTY": 11901002,
+            "RO_NO": "",
+            "OWNER_NAME": "顾雯",
+            "SERVICE_ADVISOR_NAME": "杜叶雯",
+            "DELIVERER": "顾雯"
+        }
+    ]
+}
+
+--报价定损单明细查询
+http://localhost:8080/INFO_ICREAM_WEB/App/queryEstimateOrderDetail?ESTIMATE_NO=EO1801020001
+
+{
+    "TT_ESTIMATE_LABOUR": [
+        {
+            "MODEL_LABOUR_CODE": "",
+            "TECHNIC_MODULUS": 1,
+            "DERATE_AMOUNT": 0,
+            "LABOUR_NAME": "后车门零件拆卸为油漆 *外部已油漆",
+            "DISCOUNT_AMOUNT": 201.9,
+            "REPAIR_TYPE_CODE": "CGBY",
+            "REPAIR_ITEM_TYPE_RATE": 33.65,
+            "ITEM_ID": 10020000004601,
+            "ENTITY_CODE": "VW311002",
+            "LABOUR_CODE": "58516700",
+            "STD_LABOUR_HOUR": 20,
+            "PACKAGE_CODE": "",
+            "ESTIMATE_NO": "EO1801020001",
+            "LABOUR_PRICE": 100.95,
+            "LABOUR_AMOUNT": 2019,
+            "CHARGE_PARTITION_CODE": "",
+            "LABOUR_ID": 10020000016154,
+            "LABOUR_TYPE": 21351001,
+            "VER": 0,
+            "TROUBLE_DESC": "",
+            "WORKER_TYPE_CODE": "    ",
+            "DISCOUNT": 0.9,
+            "TROUBLE_CAUSE": ""
+        }
+    ],
+    "TT_EST_INSURANCE": [
+        {
+            "INSURATION_NAME": "中华联合财产保险股份有限公司",
+            "ESTIMATE_NO": "EO1801020001",
+            "INSURATION_CODE": "IN1110260004",
+            "EST_LOSS_NO": "ds1001",
+            "LOSS_RATIO": 0,
+            "INS_REPORT_DATE": "2018-01-11",
+            "REMARK": "备注",
+            "INS_REPORT_NO": "dms1800102001",
+            "INSURATION_NO": "lp1001"
+        }
+    ],
+    "TT_ESTIMATE_ORDER": [
+        {
+            "EST_REPAIR_TYPE_NAME": "常规保养",
+            "VIN": "LSVDM29FX62219011",
+            "DISCOUNT_AMOUNT": 261.9,
+            "REPAIR_PART_AMOUNT": 240,
+            "REMARK": "",
+            "MODEL_CODE": "7P5223",
+            "EST_VALID_DATE": "2018-01-09",
+            "ADDITIONAL_AMOUNT": 500,
+            "EST_PERSON": "xinfa",
+            "LICENSE": "沪JDR002",
+            "ESTIMATE_NO": "EO1801020001",
+            "OWNER_NAME": "叶子文",
+            "LABOUR_AMOUNT": 1817.1,
+            "CUS_RECORD_ID": 0,
+            "ENGINE_NO": "FQ134561",
+            "EST_REPAIR_TYPE": "CGBY",
+            "RO_TROUBLE_DESC": "",
+            "DELIVERER": "叶子文",
+            "OWNER_NO": "OW1706160002",
+            "SERVICE_ADVISOR": "xf99",
+            "LABOUR_RATE": 0.9,
+            "BUSINESS_KIND": 22011003,
+            "SALES_DATE": "2017-06-02",
+            "GEAR_BOX": "",
+            "PART_RATE": 0.8,
+            "EST_CREATE_DATE": "2018-01-02",
+            "EST_PERSON_PHONE": "13312345678",
+            "MODEL_NAME": "途锐 3.0TSI",
+            "DELIVERER_MOBILE": "15678900987",
+            "OWNER_PROPERTY": 11901002,
+            "RO_NO": "",
+            "MOBILE": "15678900987",
+            "TOTAL_AMOUNT": 2557.1,
+            "IN_MILEAGE": 13000
+        }
+    ],
+    "TM_CUSTOMER_RECORD": [
+        {
+            "OWNER_NO": "OW1706160002",
+            "DISTRICT": 310101,
+            "SERIES_NAME": "途锐",
+            "VEHICLE_LIFE_STATUS": 25271003,
+            "VIN": "LSVDM29FX62219011",
+            "SALES_DATE": "2017-06-02",
+            "BUSINESS_KIND": 22011003,
+            "CONTACTOR_MOBILE": "15678900987",
+            "MODEL_CODE": "7P5223",
+            "BRAND_NAME": "大众",
+            "USE_KIND": 25341002,
+            "MODEL_NAME": "途锐 3.0TSI",
+            "LICENSE": "沪JDR002",
+            "OWNER_PROPERTY": 11901002,
+            "OWNER_NAME": "叶子文",
+            "MOBILE": "15678900987",
+            "PROVINCE": 310000,
+            "GENDER": 10061002,
+            "MILEAGE": 23999,
+            "CONTACTOR_NAME": "叶子文",
+            "CITY": 3101,
+            "BRAND_CODE": "VW",
+            "SERIES_CODE": "7P"
+        }
+    ],
+    "TT_ESTIMATE_ADDITIONAL_ITEM": [
+        {
+            "ADDITIONAL_CODE": "WZ000002",
+            "ESTIMATE_NO": "EO1801020001",
+            "ADDITIONAL_NAME": "客户选用高端零件",
+            "ADDITIONAL_TYPE_CODE": "FJ0002",
+            "IS_CHARGE": 12781001,
+            "ADDITIONAL_TYPE_NAME": "费用补差",
+            "ADDITIONAL_AMOUNT": 500
+        }
+    ],
+    "CODE": 200,
+    "TT_ESTIMATE_REPAIR_PART": [
+        {
+            "MODEL_LABOUR_CODE": "",
+            "PART_SALES_AMOUNT": 100,
+            "PART_NATURE": 0,
+            "REPAIR_MODE": 0,
+            "HIGH_LIMIT_PRICE": 176.96,
+            "PART_NAME": "尾数调整",
+            "DISCOUNT_AMOUNT": 20,
+            "PART_NO": "  000 000 000",
+            "REPAIR_TYPE_CODE": "CGBY",
+            "STORAGE_POSITION_CODE": "",
+            "ITEM_ID": 10020000003860,
+            "ENTITY_CODE": "VW311002",
+            "LABOUR_CODE": "",
+            "PACKAGE_CODE": "",
+            "ESTIMATE_NO": "EO1801020001",
+            "CHARGE_PARTITION_CODE": "",
+            "VER": 0,
+            "STORAGE_CODE": "  ",
+            "PART_QUANTITY": 1,
+            "DISCOUNT": 0.8,
+            "PART_SALES_PRICE": 100,
+            "UNIT_CODE": "    "
+        },
+        {
+            "MODEL_LABOUR_CODE": "",
+            "PART_SALES_AMOUNT": 200,
+            "PART_NATURE": 0,
+            "REPAIR_MODE": 0,
+            "HIGH_LIMIT_PRICE": 283.14,
+            "PART_NAME": "雷朋前档",
+            "DISCOUNT_AMOUNT": 40,
+            "PART_NO": "  000 000 001",
+            "REPAIR_TYPE_CODE": "CGBY",
+            "STORAGE_POSITION_CODE": "",
+            "ITEM_ID": 10020000003861,
+            "ENTITY_CODE": "VW311002",
+            "LABOUR_CODE": "",
+            "PACKAGE_CODE": "",
+            "ESTIMATE_NO": "EO1801020001",
+            "CHARGE_PARTITION_CODE": "",
+            "VER": 0,
+            "STORAGE_CODE": "  ",
+            "PART_QUANTITY": 1,
+            "DISCOUNT": 0.8,
+            "PART_SALES_PRICE": 200,
+            "UNIT_CODE": "    "
+        }
+    ]
+}
+
+--保险公司列表查询
+http://localhost:8080/INFO_ICREAM_WEB/App/queryInsuranceList
+
+{
+    "CODE": 200,
+    "TM_INSURANCE": [
+        {
+            "INSURATION_NAME": "国元农业保险股份有限公司",
+            "INSURATION_CODE": "IN1110260032"
+        },
+        {
+            "INSURATION_NAME": "中煤财产保险股份有限公司",
+            "INSURATION_CODE": "IN1110260033"
+        },
+        {
+            "INSURATION_NAME": "泰山财产保险股份有限公司",
+            "INSURATION_CODE": "IN1110260034"
+        }
+    ]
+}
